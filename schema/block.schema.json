@@ -15,14 +15,14 @@
           "properties": {
             "_backgroundImage": {
               "type": "object",
-              "title": "Background image",
+              "title": "Obraz tła",
               "default": {},
               "properties": {
                 "_large": {
                   "type": "string",
                   "isObjectId": true,
-                  "title": "Large",
-                  "description": "Large background image - used on desktop",
+                  "title": "Duży",
+                  "description": "Duży obraz tła - komputery i laptopy",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -31,8 +31,8 @@
                 "_medium": {
                   "type": "string",
                   "isObjectId": true,
-                  "title": "Medium",
-                  "description": "Medium background image - used on tablet",
+                  "title": "Średni",
+                  "description": "Średni obraz tła - tablety",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -41,8 +41,8 @@
                 "_small": {
                   "type": "string",
                   "isObjectId": true,
-                  "title": "Small",
-                  "description": "Small background image - used on mobile",
+                  "title": "Mały",
+                  "description": "Mały obraz tła - mobilne",
                   "_backboneForms": {
                     "type": "Asset",
                     "media": "image"
@@ -52,13 +52,13 @@
             },
             "_backgroundStyles": {
               "type": "object",
-              "title": "Background image styles",
+              "title": "Style obrazu tła",
               "default": {},
               "properties": {
                 "_backgroundRepeat": {
                   "type": "string",
                   "title": "Repeat",
-                  "description": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically",
+                  "description": "Repeat-x: Obraz tła jest powtarzany tylko w poziomie. Repeat-y: Obraz tła jest powtarzany tylko w pionie",
                   "default": "",
                   "enum": [
                     "",
@@ -71,8 +71,8 @@
                 },
                 "_backgroundSize": {
                   "type": "string",
-                  "title": "Size",
-                  "description": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container",
+                  "title": "Rozmiar",
+                  "description": "Auto: Obraz tła jest wyświetlany w oryginalnym rozmiarze. Cover: Zmienia rozmiar obrazu tła, aby pokryć cały kontener, nawet jeśli musi rozciągnąć lub przyciąć obraz. Contain: Zmienia rozmiar obrazu tła, aby upewnić się, że obraz jest w pełni widoczny. 100% 100%: Zmienia rozmiar obrazu tła, aby dopasować go do wymiarów kontenera",
                   "default": "",
                   "enum": [
                     "",
@@ -86,7 +86,7 @@
                 "_backgroundPosition": {
                   "type": "string",
                   "title": "Position",
-                  "description": "The first value is the horizontal position and the second value is the vertical",
+                  "description": "Pierwsza wartość to pozycja pozioma, druga wartość to pozycja pionowa.",
                   "default": "",
                   "enum": [
                     "",
@@ -106,58 +106,58 @@
             },
             "_minimumHeights": {
               "type": "object",
-              "title": "Block minimum height",
+              "title": "Minimalna wysokość bloku",
               "default": {},
               "properties": {
                 "_large": {
                   "type": "number",
-                  "title": "Large",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped",
+                  "title": "Duże",
+                  "description": "Minimalna wysokość powinna być stosowana tylko w przypadkach, gdy wysokość bloku musi być większa niż zawartość, np. aby zapobiec przycięciu obrazu tła.",
                   "default": 0
                 },
                 "_medium": {
                   "type": "number",
-                  "title": "Medium",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped",
+                  "title": "Średnie",
+                  "description": "Minimalna wysokość powinna być stosowana tylko w przypadkach, gdy wysokość bloku musi być większa niż zawartość, np. aby zapobiec przycięciu obrazu tła.",
                   "default": 0
                 },
                 "_small": {
                   "type": "number",
-                  "title": "Small",
-                  "description": "Minimum height should only be used in instances where the block height needs to be greater than the content e.g. to prevent a background image being cropped",
+                  "title": "Małe",
+                  "description": "Minimalna wysokość powinna być stosowana tylko w przypadkach, gdy wysokość bloku musi być większa niż zawartość, np. aby zapobiec przycięciu obrazu tła.",
                   "default": 0
                 }
               }
             },
             "_responsiveClasses": {
               "type": "object",
-              "title": "Responsive classes",
+              "title": "Klasy responsywności",
               "default": {},
               "properties": {
                 "_large": {
                   "type": "string",
-                  "title": "Large",
-                  "description": "Large CSS class - used on desktop",
+                  "title": "Duży",
+                  "description": "Klasa CSS dużych - komputery i laptopy",
                   "default": ""
                 },
                 "_medium": {
                   "type": "string",
-                  "title": "Medium",
-                  "description": "Medium CSS class - used on tablet",
+                  "title": "Średnie",
+                  "description": "Klasa CSS średnich - tablety",
                   "default": ""
                 },
                 "_small": {
                   "type": "string",
-                  "title": "Small",
-                  "description": "Small CSS class - used on mobile",
+                  "title": "Małe",
+                  "description": "Klasa CSS małych - mobilne",
                   "default": ""
                 }
               }
             },
             "_isDividerBlock": {
               "type": "boolean",
-              "title": "Set this block as a divider",
-              "description": "If enabled, applies a divider class to the block",
+              "title": "Ustaw ten blok jako separator",
+              "description": "Jeśli jest włączona, stosuje klasę separatora do bloku",
               "default": false
             }
           }
